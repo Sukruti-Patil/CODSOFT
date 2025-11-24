@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e2e2e2;
+    transition: 0.3s;
+}
+.calculator {
+    width: 320px;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(30, 32, 32);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+#display {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #888;
+    font-size: 22px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+}
+button {
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.num-btn {
+    background-color: #f1abe3;
+}
+
+.op-btn {
+    background-color: #ffb200;
+    color: white;
+}
+
+.special-btn {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+#themeBtn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background: #1e1e1e;
+}
+
+.dark-mode .calculator {
+    background: #2f2f2f;
+    color: white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.dark-mode button {
+    border: none;
+}
+
+.dark-mode #display {
+    background: #424242;
+    color: white;
+    border-color: #666;
+}
